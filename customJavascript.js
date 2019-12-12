@@ -1,11 +1,12 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //BREAKDOWN// IF/ELSE & CONDITIONAL STATEMENTS!!!//
-if (true) {
+/*if (true) {
   //any code placed here will be executed
 }
  
 if (false) {
   //any code placed here will be skipped over
-}
+}*/
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -20,7 +21,7 @@ if (false) {
 //console.log(loopCounter);
 //}
 
-/*for (var loopCounter = 0; loopCounter <= 4; loopCounter++) {
+/*for (let loopCounter = 0; loopCounter <= 4; loopCounter++) {
     console.log(loopCounter);
 }*/
 
@@ -30,13 +31,13 @@ if (false) {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //BREAKDOW// WHILE LOOP!!!//
-/*var loopCounter = 0;
+/*let loopCounter = 0;
 while (loopCounter <= 4) {
      console.log(loopCounter);
      loopCounter++
 }*/
 
-//var loopCounter = 0; < creates a variable named loopCounter and sets its value to 0 before entering the loop.
+//let loopCounter = 0; < creates a variable named loopCounter and sets its value to 0 before entering the loop.
 //The loop's condition is in the parentheses after while.
 //The loop's counter is modified within the while loop.
 
@@ -58,3 +59,39 @@ while (loopCounter <= 4) {
 
 // BREAKDOWN// DO WHILE LOOP!!!// ENDING.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//BREAKDOWN!!!// POP UP FUNCTIONS//
+
+
+//original code:
+
+/*var likesCake = confirm("Do you like cake?");
+if (likesCake) {
+    var favoriteCake = prompt("What is your favorite cake?");
+    alert("Your favorite cake is: " + favoriteCake);
+} else {
+    alert("The cake is a lie anyhow.");
+} */
+
+
+
+
+
+//checks to see if the use likes cake.
+var likesCake = confirm("Do you like cake?"); 
+//if the user likes cake, find out what the users favorite cake is.
+
+if(likesCake) {
+    var favoriteCake = prompt("What's your favorite cake?"); 
+    // alert them that thier favorit cake is whatever is inputed.
+    //from the prompt() function 
+    alert("your favorite cake is: " + favoriteCake);
+    
+} else {
+    // if the user dosent like cake, show them that cake is a lie.
+    alert("Cake is a lie anyways.");
+        
+}
+

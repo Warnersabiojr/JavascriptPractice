@@ -5,3 +5,6 @@ for(var i = 0; i < sentence.length; i ++) {
         console.log(sentence[i]);
     }
 }
+
+for(var n = 0; n < 25; n++)
+    
